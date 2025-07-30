@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranjini M - Python Developer & Data Analyst</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4a6fa5;
+            --secondary: #166088;
+            --accent: #4fc3f7;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --text: #333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .profile-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .about-me, .contact-info {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .section-title {
+            color: var(--primary);
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent);
+            font-size: 1.4rem;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-info i {
+            width: 25px;
+            color: var(--secondary);
+            margin-right: 10px;
+        }
+        
+        .contact-info a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .resume-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .education-item, .experience-item {
+            margin-bottom: 20px;
+        }
+        
+        .education-item h3, .experience-item h3 {
+            color: var(--secondary);
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        
+        .education-item p, .experience-item p {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .skill {
+            background-color: var(--light);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .tech-skill {
+            background-color: var(--accent);
+            color: white;
+        }
+        
+        ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+        
+        ul li {
+            margin-bottom: 8px;
+        }
+        
+        .project-highlights {
+            margin-top: 15px;
+        }
+        
+        .project-highlights li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .project-highlights li:before {
+            content: "•";
+            color: var(--accent);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .hobbies-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .hobby {
+            display: flex;
+            align-items: center;
+            background-color: var(--light);
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+        
+        .hobby i {
+            margin-right: 8px;
+            color: var(--secondary);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--dark);
+            color: white;
+            margin-top: 30px;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .profile-section {
+                flex-direction: column;
+            }
+            
+            .resume-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>RANJINI M</h1>
+            <p>BCA Graduate | Python Developer | Data Analyst</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="profile-section">
+            <div class="about-me">
+                <h2 class="section-title">About Me</h2>
+                <p>BCA graduate with internships in Python development at Rankbook and manufacturing & dispatch operations at Nandha Pipe Pvt. Ltd. Skilled in Python, SQL, and basic web development, with a project on Drug Analysis and Prediction using data analysis techniques.</p>
+            </div>
+            
+            <div class="contact-info">
+                <h2 class="section-title">Contact</h2>
+                <p><i class="fas fa-birthday-cake"></i> 04/05/2004</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:7259323590">7259323590</a>, <a href="tel:7899323590">7899323590</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:ranjinim094@gmail.com">ranjinim094@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Ravindra nagar 9th cross, Hassan</p>
+            </div>
+        </section>
+        
+        <section class="resume-grid">
+            <div class="card">
+                <h2 class="section-title">Education</h2>
+                <div class="education-item">
+                    <h3>BCA Graduate (9.44 CGPA)</h3>
+                    <p>Govt Science College, Mysore University</p>
+                    <p>2022-2025</p>
+                </div>
+                <div class="education-item">
+                    <h3>PUC (89%)</h3>
+                    <p>Govt Girls College, Karnataka Board</p>
+                    <p>2020-2022</p>
+                </div>
+                <div class="education-item">
+                    <h3>SSLC (69%)</h3>
+                    <p>Govt Girls School, Karnataka Board</p>
+                    <p>2020</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-container">
+                    <span class="skill tech-skill">Python</span>
+                    <span class="skill tech-skill">SQL</span>
+                    <span class="skill tech-skill">Web Development</span>
+                    <span class="skill tech-skill">Data Analysis</span>
+                    <span class="skill">Communication</span>
+                    <span class="skill">Team Collaboration</span>
+                    <span class="skill">Time Management</span>
+                    <span class="skill">Client Counseling</span>
+                </div>
+                
+                <h2 class="section-title" style="margin-top: 25px;">Languages</h2>
+                <ul>
+                    <li>Kannada</li>
+                    <li>Tamil</li>
+                    <li>English</li>
+                    <li>Hindi</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="resume-grid">
+            <div class="card">
+                <h2 class="section-title">Internships</h2>
+                <div class="experience-item">
+                    <h3>Python Internship at Rankbook</h3>
+                    <ul>
+                        <li>Strengthened coding and problem-solving abilities</li>
+                        <li>Worked on real-time Python projects focusing on data handling and basic automation tasks</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Manufacturing and Dispatch at Nandha Pipe Pvt. Ltd.</h3>
+                    <ul>
+                        <li>Learned about real-time workflow and team coordination in industrial training</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="experience-item">
+                    <h3>Academic Counselor</h3>
+                    <ul>
+                        <li>Counseled students on academic programs, career options, and admission processes</li>
+                        <li>Handled outbound calls to promote courses and convert leads to enrollments</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Telecaller</h3>
+                    <ul>
+                        <li>Developed clear and confident verbal communication through daily interaction with students and clients</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="card">
+            <h2 class="section-title">Projects</h2>
+            <div class="experience-item">
+                <h3>Drug Analysis and Prediction</h3>
+                <ul class="project-highlights">
+                    <li>Developed a web application using Flask and Python for 3D molecular visualization and drug analysis</li>
+                    <li>Integrated 3Dmol.js for real-time rendering of drug structures and structural comparison</li>
+                    <li>Predicted potential side effects of drugs based on molecular interactions and properties</li>
+                    <li>Designed multiple modules including molecular structure analysis, side effect prediction, and drug interaction analysis</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="card">
+            <h2 class="section-title">Hobbies</h2>
+            <div class="hobbies-container">
+                <span class="hobby"><i class="fas fa-paint-brush"></i> Painting</span>
+                <span class="hobby"><i class="fas fa-pencil-ruler"></i> Art Designing</span>
+                <span class="hobby"><i class="fas fa-leaf"></i> Gardening</span>
+                <span class="hobby"><i class="fas fa-portrait"></i> Portrait Creating</span>
+                <span class="hobby"><i class="fas fa-book"></i> Reading Books</span>
+                <span class="hobby"><i class="fas fa-language"></i> Language Learning</span>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Ranjini M. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
