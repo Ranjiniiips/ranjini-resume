@@ -355,3 +355,8 @@ footer {
         flex-direction: column;
     }
 }
+.gallery {
+    display:grid;
+    grid-template-colmns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    padding :20px;
